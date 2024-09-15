@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0e153e;
+    color: white;
+}
+
+header {
+    background-color: #0e153e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.header-text h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0e153e;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin-bottom: 40px;
+}
+
+.skillbar {
+    margin-bottom: 15px;
+}
+
+.skillbar-container {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skillbar-progress {
+    background-color: #007BFF;
+    height: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #007BFF;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-left: 50px;
+    padding: 10px 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #007BFF;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #007BFF;
+}
+
+.timeline-date {
+    font-size: 1.0em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.timeline-content {
+    padding: 10px 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin: 0 0 5px;
+}
+
+.timeline-content p {
+    margin: 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+
+details summary {
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+details summary:hover {
+    background-color: #e0e0e0;
+}
+
+details[open] summary {
+    background-color: #e0e0e0;
+}
